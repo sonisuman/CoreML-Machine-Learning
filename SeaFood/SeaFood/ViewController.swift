@@ -35,12 +35,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate {
             }
             print(results)
             if let firstResult = results.first {
-                if firstResult.identifier.contains("keyboard") {
-                    self.navigationItem.title = "keyboard!!!"
-                }
-                else {
-                    self.navigationItem.title = "Not a keyboard!!!"
-                }
+                    self.navigationItem.title = firstResult.identifier + "!!!"
             }
         }
             
